@@ -1,5 +1,6 @@
-# include <stdio.h>
-# include <signal.h>
+#include <stdio.h>
+#include <signal.h>
+#include <stdlib.h>
 
 // can send two types of signals to the server: SIGINT, SIGUSR1
 
@@ -11,6 +12,8 @@ int main(int argc, char **argv) {
     int i = 0;
     while(i < signal_count) {
         kill(server_pid, signal_num);
+        i++;
     } 
     return 0;
 }
+

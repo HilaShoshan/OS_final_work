@@ -13,7 +13,7 @@
 // program that set policy of timing and priorities of a process
 
 /* parameters to send (from terminal):
-    1) number that represents a spesifiv policy
+    1) number that represents a spesific policy
         SCHED_OTHER ------ 0
         SCHED_FIFO ------- 1
         SCHED_RR --------- 2

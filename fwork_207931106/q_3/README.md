@@ -21,7 +21,8 @@
     
 ## and if you want to check if it worked ... 
    
-### 4. open a new terminal and run the "top" command to see the PID of the ./set policy command
+### 4. open a new terminal and run a command to check the PID of the ./set policy process
+    (for example tou can use "top" command)
 
 ### 5. run the command: $ chrt -p pid 
     # you'll get an output that tells you: current policy and current priority

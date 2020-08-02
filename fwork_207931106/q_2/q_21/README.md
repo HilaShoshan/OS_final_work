@@ -9,10 +9,14 @@
 ### 3. rum the program and also send the pid: 
       $ ./check_pid pid
       
-! The output will be one of the following: 
+### ! The output will be one of the following: 
+
   >>> Process ___ exists 
+  
   >>> Process ___ does not exist
+  
   >>> Process ___ exists but we have no permission
+  
   >>> call to kill() failed for some reason  [and exit the program] 
 
 </div>

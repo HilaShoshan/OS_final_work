@@ -9,6 +9,7 @@
 
 
 // program that performs a recursive transition on a given directory
+// if the directory contains soft-link, ignores it
 
 
 /** nftw() calls that function for each entry found in the tree,

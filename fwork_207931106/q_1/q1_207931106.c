@@ -11,7 +11,7 @@ square(int x)                   /* 3. text (code) section */
     int result;                 /* 4. stack */
 
     result = x * x;
-    return result;              /* 5. How the return value is passed? */
+    return result;              /* 5. the return value is passed by eax register */
 }
 
 static void
@@ -32,7 +32,7 @@ main(int argc, char* argv[])    /* text (code) section */
 {
     static int key = 9973;      /* initialized data section */
     static char mbuf[10240000]; /* uninitialized data section (bss) */
-    char* p;                    /* stack ????? */
+    char* p;                    /* stack (but it's unused variable, so because of compiler optimizations, it ignores it) */
 
 
     doCalc(key);

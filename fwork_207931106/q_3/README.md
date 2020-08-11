@@ -15,6 +15,9 @@
     # priority options: 
       0 - for  "normal" (i.e., non-real-time) scheduling policies [SCHED_OTHER, SCHED_BATCH, SCHED_IDLE]
       1-99 - for real-time policies [SCHED_FIFO, SCHED_RR]
+    # notes: 
+      - If you select a value different from 0 in SCHED that are not 1 or 2, my code will correct it automatically - it will ask to set the priority to 0
+      - If you select a value that is not in range [1,99] for SCHED_FIFO or SCHED_RR, you will be notified and the code will exit.
       
 ### 3. run the code on one terminal 
     # using command: $ sudo ./set_policy policy priority

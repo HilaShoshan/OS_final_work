@@ -47,13 +47,15 @@ int main(int argc, char **argv) {
     sscanf(argv[1], "%d", &policy);
     sscanf(argv[2], "%d", &priority);
 
-    if(priority < 0 || priority > 99) {
-        printf("priority value is not in range, please choose number between 0 to 99 \n");
-        exit(1);
-    }
-
     if(policy == 0 || policy == 3 || policy == 5)  
         priority = 0;  // param->sched_priority must be 0 for each of the above policies
+
+    else if(policy == 1 || policy == 2) {
+        if(priority < 1 || priority > 99) {
+            printf("priority value is not in range, please choose number between 1 to 99 \n");
+            exit(1);
+        }
+    }
 
     int ret_val = 0;
     struct sched_param param;

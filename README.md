@@ -26,3 +26,6 @@ set the priority and the policy of a running process
 
 Scan an entire library recursively, and perform operations on the files.
 check it's inode number and it's type. ignore soft links.
+
+
+## ! each question contains a makefile to compile, and a README that explains how to run ! 
